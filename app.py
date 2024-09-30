@@ -41,6 +41,7 @@ authenticator = stauth.Authenticate(names, usernames, hashed_passwords,
     "sales_dashboard", "abcdef", cookie_expiry_days=30)
 
 name, authentication_status, username = authenticator.login("Login", "main")
+authenticator.logout("Logout", "sidebar")
 
 if authentication_status == False:
     st.error("Username/password is incorrect")
