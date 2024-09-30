@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import os 
 import snowflake.connector
 
-st.set_page_config(page_title='Data Verification', page_icon='',layout='wide')
+# st.set_page_config(page_title='Data Verification', page_icon='',layout='wide')
 
 load_dotenv()
 conn = snowflake.connector.connect(

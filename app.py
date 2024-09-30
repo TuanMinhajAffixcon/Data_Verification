@@ -12,11 +12,12 @@
 
 
 #------------------------------------------------------------------------------------------------
+import streamlit as st
+st.set_page_config(page_title='Data Verification', page_icon='',layout='wide')
 
 from template import *
 import requests
 from requests.auth import HTTPBasicAuth
-import streamlit as st
 import pandas as pd
 
 import pickle
